@@ -1,0 +1,28 @@
+{
+    "name": "jpsistemasbr/plates-view",
+    "description": "Sistema Gerenciador de Template Plates com PHP",
+    "keywords": [
+        "plates-view",
+        "View",
+        "Plates"
+    ],
+    "type": "library",
+    "version": "v1.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "José Paulo S. Silva",
+            "email": "jpsistemasbr@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "league/plates": "3.*",
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JPsistemasBR\\View\\": "src"
+        }
+    }
+}
