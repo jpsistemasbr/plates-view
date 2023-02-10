@@ -29,8 +29,12 @@ class View
             header("Location: " . URL_BASE . "/ops/506");
         }
     }
-    function redirect($rout = null)
+    function redirect($rout = null, $time = null)
     {
-        header("Location: " . URL_BASE . "/$rout");
+        if ($time) {
+            header("refresh:$time; url=" . URL_BASE . "/$rout");
+        } else {
+            header("Location: " . URL_BASE . "/$rout");
+        }
     }
 }
